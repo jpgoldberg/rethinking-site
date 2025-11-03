@@ -1,6 +1,6 @@
 +++
 title = "Who am I"
-template = "about.html"
+# template = "about.html"
 [extra]
 socials = [
     {name = "homepage", uri = "https://jeffrey.goldmark.org"},
