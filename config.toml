@@ -20,3 +20,9 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+menu_items = [
+    {name = "who am i", url = "/pages/whoami"},
+    {name = "about", url = "/pages/about"},
+    {name = "projects", url = "/pages/projects"},
+]
+math = true
