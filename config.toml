@@ -1,6 +1,12 @@
 # The URL the site will be built for
 base_url = "https://rethinking-security.org"
 
+title = "Rethinking Security"
+description = "Eventually this will contain some occassionally unconvential thoughts on information security"
+author = "Jeffrey Goldberg"
+
+theme = "zola-folio"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
