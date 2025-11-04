@@ -1,8 +1,10 @@
 # The URL the site will be built for
 base_url = "https://rethinking-security.org"
+default_language = "en"
 
 title = "Rethinking Security"
 description = "Eventually this will contain some occassionally unconvential thoughts on information security"
+
 author = "Jeffrey Goldberg"
 
 theme = "tabi"
@@ -12,6 +14,14 @@ compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+[search]
+index_format = "elasticlunr_json"
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+
+
 
 [markdown]
 # Whether to do syntax highlighting
@@ -20,8 +30,44 @@ highlight_code = true
 highlight_theme = "css"
 
 [extra]
-# Put all your custom variables here
+# theme specific config
+# A complete list of availabe tags for tabi appears to be in
+# themes/tabi/theme.toml
+# with a guide at https://welpo.github.io/tabi/blog/mastering-tabi-settings/
 
-math = true
-
+homepage = "https://jeffrey.goldmark.org"
+math = false               # this this to true in the pages that need it
 post_listing_date = "both"
+
+remote_repository_url = "https://github.com/jpgoldberg/rethinking-site"
+
+menu = [
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "archive", url = "archive", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true },
+]
+
+# A bunch of settings for in and around the footer
+fediverse_creator = { handle = "jpgoldberg", domain = "ioc.exchange" }
+copyright = "© $CURRENT_YEAR [Jeffrey Goldberg](https://jeffrey.goldmark.org) $SEPARATOR Unless otherwise noted, the content in this website is available under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license."
+email = "amVmZnJleUBnb2xkbWFyay5vcmcK" # b64 encoded
+
+[[extra.socials]]
+    name = "mastodon"
+    url = "https://ioc.exchange/@jpgoldberg"
+    icon = "mastodon"
+
+[[extra.socials]]
+    name = "github"
+    url = "https://github.com/jpgoldberg"
+    icon = "github"
+
+[[extra.socials]]
+    name = "keybase"
+    url = "https://keybase.io/jpgoldberg"
+    icon = "keybase"
+
+[[extra.socials]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/jeffrey-goldberg-390692122/"
+    icon = "linkedin"
