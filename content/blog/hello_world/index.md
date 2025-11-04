@@ -1,8 +1,10 @@
 +++
 title = "Hello, world!"
 date = 2025-11-03T22:25:34+00:00
-tags = ["introduction"]
 updated = 2025-11-03T22:50:02+00:00
+
+[taxonomies]
+tags = ["introduction"]
 
 [extra]
 pinned = true
