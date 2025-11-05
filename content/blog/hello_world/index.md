@@ -1,7 +1,7 @@
 +++
 title = "Hello, world!"
 date = 2025-11-03T22:25:34+00:00
-updated = 2025-11-03T22:50:02+00:00
+updated = 2025-11-05T00:39:02+00:00
 
 [taxonomies]
 tags = ["introduction"]
@@ -18,3 +18,5 @@ interest as<!-- more -->
 [“Hello, World”](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program),
 but a proper introduction to the blog and perhaps a substantive post or two should be
 coming soon.
+
+Some ideas for future content are visible as issues with the “[Ideas](https://github.com/jpgoldberg/rethinking-site/issues?q=state%3Aopen%20label%3AIdea)” tag in this site's repository.
